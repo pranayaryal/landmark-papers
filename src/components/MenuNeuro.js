@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const MenuNeuro = () => {
     return (
         <aside class="menu">
-            <p class="menu-label">General</p>
+            <p class="menu-label">General Neurology</p>
             <ul class="menu-list">
                 <li><a>Dashboard</a></li>
                 <li><a>Customers</a></li>
