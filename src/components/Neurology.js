@@ -1,4 +1,5 @@
 import React from 'react';
+import {Chatting} from '../img/chatting using apps.svg'
 
 import MenuNeuro from './MenuNeuro';
 import Home from './Home';
@@ -12,7 +13,8 @@ const Neurology = () => {
                 <MenuNeuro />
             </div>
             <div className="column is-two-thirds">
-                <p>You are in neurology</p>
+                <p>Neuro guys have no job</p>
+                <img src={require('../img/chatting using apps.svg')} alt='chatting'/>
             </div>
         </div>
       </div>

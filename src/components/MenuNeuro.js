@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import {Chatting} from '../img/chatting using apps.svg'
+
 const MenuNeuro = () => {
     return (
         <aside class="menu">

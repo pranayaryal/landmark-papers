@@ -7,8 +7,15 @@ const Cardiology = () => {
     return (
         <div className="container">
             <Home />
-            <MenuCardio />
+            <div className="columns">
+            <div className="column is-one-third">
+                <MenuCardio />
+            </div>
+            <div className="column is-one-third">
             <p>You are in cardiology</p>
+            <img src={require('../img/working in a laboratory.svg')} alt="lab" />
+            </div>
+            </div>
         </div>
     );
 }
