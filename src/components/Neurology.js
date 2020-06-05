@@ -1,5 +1,4 @@
 import React from 'react';
-import {Chatting} from '../img/chatting using apps.svg'
 
 import MenuNeuro from './MenuNeuro';
 import Home from './Home';
