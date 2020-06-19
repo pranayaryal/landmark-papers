@@ -1,25 +1,37 @@
 import React from 'react';
-import './App.scss';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
-import Hero from './components/Hero';
-import Neurology from './components/Neurology';
+import Movement from './components/Movement';
+import Neuromuscular from './components/Neuromuscular';
 import Navbar from './components/Navbar';
 import Cardiology from './components/Cardiology';
 import Home from './components/Home';
+import Menu from './components/Menu';
+import Content from './components/Content';
 
 function App() {
   return (
     <div>
       <Navbar />
-        <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/neurology" render={() => <Neurology/>}/>
-          <Route exact path="/cardiology" render={() => <Cardiology />}/>
+      <div className="hidden">Home Icon</div>
 
-        </Switch>
+      <div className="flex px-6 pt-5 lg:px-40 lg:pt-16">
+        <Menu />
+        {/* <Content /> */}
+        <div className="ml-4 lg:w-4/5 lg:ml-20">
+          <Switch>
+            <Route exact path="/movement" render={() => <Movement />} />
+            <Route exact path="/neuromuscular" render={() => <Neuromuscular />} />
+            <Route exact path="/" render={() => <Home />} />
+            <Route exact path="/cardiology" render={() => <Cardiology />} />
+
+          </Switch>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
