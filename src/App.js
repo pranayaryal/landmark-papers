@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Movement from './components/Movement';
 import Neuromuscular from './components/Neuromuscular';
@@ -12,7 +12,7 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
       <div className="hidden">Home Icon</div>
 
@@ -29,7 +29,7 @@ function App() {
           </Switch>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
